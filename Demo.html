@@ -1,0 +1,13 @@
+<html>
+<script>
+//1.匹配1-99的数字
+var regx=/^[1-9]\d?$/; //注意匹配时不要加g全局标识
+for(var i=0;i<=100;i++){
+	console.info(regx.test(i.toString())+" -> "+i);
+}
+//2.提取出字符串中的一组数字
+var regx=/\d+/;
+var tempStr="亲爱的20141205快乐";
+console.info(tempStr.match(regx)[0]);
+</script>
+</html>
